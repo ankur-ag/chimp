@@ -9,14 +9,14 @@ export default function Home() {
           <Image 
             src="/images/chimp.png" 
             alt="Chimp Coin Logo" 
-            width={100} 
-            height={100}
+            width={250} 
+            height={250}
           />
-          <h1 className="text-4xl font-bold text-white">$CHIMP COIN</h1>
+          <h1 className="text-4xl font-bold text-white">CHIMP COIN</h1>
           <div className="space-x-4">
-            <button className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">About</button>
-            <button className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">Tokenomics</button>
-            <button className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">Community</button>
+            <a href="https://ape.express/explore/0xbb951d594f67fb9ae73e7faebc5f8e1b62e2ef3f" className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">About</a>
+            <a href="https://ape.express/explore/0xbb951d594f67fb9ae73e7faebc5f8e1b62e2ef3f" className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">Tokenomics</a>
+            <a href="https://x.com/BoredApeYC" className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">Community</a>
           </div>
         </nav>
       </header>
