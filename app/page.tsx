@@ -68,7 +68,7 @@ export default function Home() {
 
         <section className="text-center">
           <h3 className="text-4xl font-bold text-white mb-8">Join the Chimp Troop!</h3>
-          <p className="text-xl text-white mb-8">Don't monkey around! Be part of the wildest community in crypto.</p>
+          <p className="text-xl text-white mb-8">Don&apos;t monkey around! Be part of the wildest community in crypto.</p>
           <div className="flex justify-center space-x-4">
             <button className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded transition">
               Twitter
