@@ -1,101 +1,91 @@
-import Image from "next/image";
+import { Banana, Rocket, ShieldCheck, Coins } from "lucide-react"
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-gradient-to-b from-yellow-400 to-orange-500">
+      <header className="container mx-auto py-6">
+        <nav className="flex justify-between items-center">
+          <Image 
+            src="/images/chimp.png" 
+            alt="Chimp Coin Logo" 
+            width={100} 
+            height={100}
+          />
+          <h1 className="text-4xl font-bold text-white">🐵 Chimp Coin</h1>
+          <div className="space-x-4">
+            <button className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">About</button>
+            <button className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">Tokenomics</button>
+            <button className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">Community</button>
+          </div>
+        </nav>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+      <main className="container mx-auto py-12">
+        <section className="text-center mb-16">
+          <h2 className="text-6xl font-extrabold text-white mb-4">Welcome to the Jungle of Gains!</h2>
+          <p className="text-xl text-white mb-8">Swing into the future of finance with Chimp Coin 🍌</p>
+          <a href="https://ape.express/explore/0xbb951d594f67fb9ae73e7faebc5f8e1b62e2ef3f" target="_blank" rel="noopener noreferrer">
+            <button className="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white text-lg font-semibold rounded-lg transition">
+              Buy Chimp Coin
+            </button>
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        </section>
+
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          {[
+            { icon: <Banana className="h-12 w-12 text-yellow-300" />, title: "Ape-pealing Returns" },
+            { icon: <Rocket className="h-12 w-12 text-blue-500" />, title: "To the Treetops!" },
+            { icon: <ShieldCheck className="h-12 w-12 text-green-500" />, title: "Jungle-Secure" },
+            { icon: <Coins className="h-12 w-12 text-yellow-500" />, title: "Banana Economics" },
+          ].map((feature, index) => (
+            <div key={index} className="bg-white bg-opacity-90 rounded-lg p-6">
+              <div className="flex flex-col items-center mb-4">
+                {feature.icon}
+                <h3 className="mt-2 text-xl font-semibold">{feature.title}</h3>
+              </div>
+              <p className="text-center">Experience the wild side of crypto with our unique features!</p>
+            </div>
+          ))}
+        </section>
+
+        <section className="text-center mb-16">
+          <h3 className="text-4xl font-bold text-white mb-8">Tokenomics</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { title: "Total Supply", value: "774,217,349", unit: "CHIMP" },
+              { title: "Burn Rate", value: "2%", unit: "Per Transaction" },
+              { title: "Reward Pool", value: "5%", unit: "For HODLers" },
+            ].map((item, index) => (
+              <div key={index} className="bg-white bg-opacity-90 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">{item.title}</h4>
+                <p className="text-4xl font-bold">{item.value}</p>
+                <p>{item.unit}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="text-center">
+          <h3 className="text-4xl font-bold text-white mb-8">Join the Chimp Troop!</h3>
+          <p className="text-xl text-white mb-8">Don't monkey around! Be part of the wildest community in crypto.</p>
+          <div className="flex justify-center space-x-4">
+            <button className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded transition">
+              Twitter
+            </button>
+            <button className="px-6 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded transition">
+              Discord
+            </button>
+            <button className="px-6 py-2 bg-pink-500 hover:bg-pink-600 text-white rounded transition">
+              Telegram
+            </button>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="container mx-auto py-6 text-center text-white">
+        <p>© 2024 Chimp Coin. All rights reserved. 🍌</p>
       </footer>
     </div>
-  );
+  )
 }
