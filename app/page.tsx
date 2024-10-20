@@ -12,7 +12,7 @@ export default function Home() {
             width={100} 
             height={100}
           />
-          <h1 className="text-4xl font-bold text-white">🐵 Chimp Coin</h1>
+          <h1 className="text-4xl font-bold text-white">$CHIMP COIN</h1>
           <div className="space-x-4">
             <button className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">About</button>
             <button className="px-4 py-2 bg-white bg-opacity-20 text-white rounded hover:bg-opacity-30 transition">Tokenomics</button>
@@ -24,7 +24,7 @@ export default function Home() {
       <main className="container mx-auto py-12">
         <section className="text-center mb-16">
           <h2 className="text-6xl font-extrabold text-white mb-4">Welcome to the Jungle of Gains!</h2>
-          <p className="text-xl text-white mb-8">Swing into the future of finance with Chimp Coin 🍌</p>
+          <p className="text-xl text-white mb-8">Swing TO THE MOON with $CHIMP Coin 🍌</p>
           <a href="https://ape.express/explore/0xbb951d594f67fb9ae73e7faebc5f8e1b62e2ef3f" target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white text-lg font-semibold rounded-lg transition">
               Buy Chimp Coin
@@ -44,7 +44,7 @@ export default function Home() {
                 {feature.icon}
                 <h3 className="mt-2 text-xl font-semibold">{feature.title}</h3>
               </div>
-              <p className="text-center">Experience the wild side of crypto with our unique features!</p>
+              <p className="text-center">Experience the wild side of APECHAIN MEME FRENZY!</p>
             </div>
           ))}
         </section>
