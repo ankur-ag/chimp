@@ -27,7 +27,7 @@ export default function Home() {
           <p className="text-xl text-white mb-8">Swing TO THE MOON with $CHIMP Coin 🍌</p>
           <a href="https://ape.express/explore/0xbb951d594f67fb9ae73e7faebc5f8e1b62e2ef3f" target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white text-lg font-semibold rounded-lg transition">
-              Buy Chimp Coin
+              BUY $CHIMP COIN
             </button>
           </a>
         </section>
