@@ -70,15 +70,16 @@ export default function Home() {
           <h3 className="text-4xl font-bold text-white mb-8">Join the Chimp Troop!</h3>
           <p className="text-xl text-white mb-8">Don&apos;t monkey around! Be part of the wildest community in crypto.</p>
           <div className="flex justify-center space-x-4">
-            <button className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded transition">
-              Twitter
-            </button>
-            <button className="px-6 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded transition">
-              Discord
-            </button>
-            <button className="px-6 py-2 bg-pink-500 hover:bg-pink-600 text-white rounded transition">
-              Telegram
-            </button>
+            <a href="https://x.com/ChimpsToTheMoon">
+              <button className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded transition">
+                Twitter
+              </button>
+            </a>
+            <a href="https://ape.express/explore/0xbb951d594f67fb9ae73e7faebc5f8e1b62e2ef3f">
+              <button className="px-6 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded transition">
+                ApeExpress
+              </button>
+            </a>
           </div>
         </section>
       </main>
