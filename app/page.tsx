@@ -27,7 +27,7 @@ export default function Home() {
           <p className="text-xl text-white mb-8">Swing TO THE MOON with $CHIMP Coin 🍌</p>
           <a href="https://ape.express/explore/0xbb951d594f67fb9ae73e7faebc5f8e1b62e2ef3f" target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white text-lg font-semibold rounded-lg transition">
-              BUY $CHIMP COIN
+              BUY $CHIMP
             </button>
           </a>
         </section>
@@ -44,7 +44,7 @@ export default function Home() {
                 {feature.icon}
                 <h3 className="mt-2 text-xl font-semibold">{feature.title}</h3>
               </div>
-              <p className="text-center">Experience the wild side of APECHAIN MEME FRENZY!</p>
+              <p className="text-center">Experience the wild side of APE EXPRESS!</p>
             </div>
           ))}
         </section>
